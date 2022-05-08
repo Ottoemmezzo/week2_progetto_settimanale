@@ -166,22 +166,22 @@ footer i{
     background-image: linear-gradient(to right,#6cc1e2,#392f7a);
 }
 /*Chi siamo*/
-tr:nth-child(1){
+#tabella tr:nth-child(1){
     background-color:#d2dce7 ;
 }
-tr:nth-child(2){
+#tabella tr:nth-child(2){
     background-color:#d2dce7 ;
 }
-tr:nth-child(3){
+#tabella tr:nth-child(3){
     background-color:#d2dce7 ;
 }
-tr:nth-child(7){
+#tabella tr:nth-child(7){
     background-color:#d2dce7 ;
 }
-tr:nth-child(8){
+#tabella tr:nth-child(8){
     background-color:#d2dce7 ;
 }
-tr:nth-child(9){
+#tabella tr:nth-child(9){
     background-color:#d2dce7 ;
 }
 #chi1{
@@ -204,6 +204,9 @@ main th{
     display:flex;
     justify-content: center;
     text-align:center;
+}
+#tabella_wide{
+    display:none;
 }
 /*Contatti*/
 #titolo_contatti{
@@ -229,9 +232,10 @@ main th{
 #f_email{
     width:70%;
     height:1.2rem;
-}
+    }
 #f_message{
     width:70%;
+    
 }
 #invia{
     background-image: linear-gradient(to right,#6cc1e2,#392f7a);
@@ -370,6 +374,7 @@ main th{
     margin-top: 50px;
     display:flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 
 }   
 #chi2{
@@ -378,6 +383,33 @@ main th{
 #chi3{
     width:45%;
 }
+#tabella{
+    display:none;
+}
+#tabella_wide{
+    width:60%;
+    display:contents;
+}
+#tabella_wide caption{
+    font-weight:bold;
+
+}
+#tabella_wide tr:nth-child(1){
+    background-color: #6cc1e2;
+
+}
+#tabella_wide tr:nth-child(2){
+    background-color:#d2dce7 ;
+
+
+}
+#tabella_wide tr:nth-child(4){
+    background-color:#d2dce7 ;
+
+
+}
+
+
 /*Contatti*/
 #titolo_contatti{
     text-align: center;
