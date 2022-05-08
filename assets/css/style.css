@@ -1,0 +1,409 @@
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+body{
+    
+    color:#000;
+    font-size: 1.5rem;
+    font-family: 'Fira sans', sans-serif;
+    line-height:1.8;
+}
+
+h1{
+    line-height:1.2;
+    font-size:4rem;
+}
+h2{
+    line-height:1.1;
+    font-size:3.5rem;
+}
+h3{
+    line-height:1;
+    font-size:3rem;
+}
+header nav a{
+    text-decoration:none;
+}
+
+.container {
+
+}
+
+header {
+    background-color: white;
+    box-shadow: 0 2px 10px #d3d3d3);
+    padding: 1em;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input#btn_ham {
+    display: none;
+}
+
+input#btn_ham:checked ~ nav {
+    height:200px;
+} 
+
+i{
+    color: #e42424;
+}
+main i {
+    
+    font-size:3rem;
+    margin-top:50px;
+}
+
+#sez1{
+    
+    font-weight: bold;
+    background-image: url("../images/banner_500.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+    padding:10px;
+}
+
+button{
+    background-image: linear-gradient(to right,#6cc1e2,#392f7a);
+    color: white;
+    font-size:1.9rem;
+}
+
+ .info{
+    animation-name:raggio;
+    /*animation: pulse 2s infinite;*/
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes raggio{
+    0%{
+        box-shadow:0 0 0 0 rgba(0, 0 , 0,  0.8);
+    }
+    100%{
+        box-shadow:0 0 0 20px rgba(0,0,0, 0);
+    }
+}
+section {
+    box-sizing: border-box;
+    text-align:center;
+}
+section h1{
+    margin: 40px 20px 0 20px;
+}
+section p{
+    
+    margin: 40px 20px 15px 20px;
+
+}
+section h2{
+    margin: 40px 20px 0px 20px;
+}
+#developer{
+    box-sizing: border-box;
+    color:white;
+    background-color:#0c0633;
+    text-align:center;
+    padding:80px 20px 80px 20px;
+
+}
+#developer p{
+    margin:50px 0px 50px 0px;
+
+}
+#azione{
+    text-align: center;
+    
+
+}
+#azione img{
+    width:80%;
+}
+#azione dt{
+    box-sizing: border-box;
+    line-height:1.1;
+    font-size:2.5rem;
+    margin-top: 40px;
+}
+#azione dd{
+    font-size:0.8em;
+}
+
+
+/* FOOTER */
+footer{
+    box-sizing: border-box;
+    background-color: rgb(238,238,238);
+    text-align:left;
+    padding: 40px;
+}
+footer h2{
+    margin-top:30px;
+    margin-bottom: 30px;
+
+    
+}
+footer input{
+    height:1.9rem;
+    display:block;
+    
+}
+footer i{
+    font-size: 3rem;
+}
+.txt_email{
+    width:80%;
+}
+.btn_submit{
+    width:80%;
+    background-image: linear-gradient(to right,#6cc1e2,#392f7a);
+}
+/*Chi siamo*/
+tr:nth-child(1){
+    background-color:#d2dce7 ;
+}
+tr:nth-child(2){
+    background-color:#d2dce7 ;
+}
+tr:nth-child(3){
+    background-color:#d2dce7 ;
+}
+tr:nth-child(7){
+    background-color:#d2dce7 ;
+}
+tr:nth-child(8){
+    background-color:#d2dce7 ;
+}
+tr:nth-child(9){
+    background-color:#d2dce7 ;
+}
+#chi1{
+    width:100%;
+    text-align: center;
+}
+#chisiamo img{
+    width:100%;
+}
+main th{
+    font-weight: bold;
+}
+#chisiamo caption{
+    font-weight: bold;
+}
+#tabella table{
+    width:80%;
+}
+#tabella{
+    display:flex;
+    justify-content: center;
+    text-align:center;
+}
+/*Contatti*/
+#main_contatti{
+    text-align:center;
+}
+#contatti{
+    text-align: center;
+    margin-top:50px;
+    width:80%;
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#fname{
+    width:70%;
+    height:1.2rem;
+}
+#f_email{
+    width:70%;
+    height:1.2rem;
+}
+#f_message{
+    width:70%;
+}
+#invia{
+    background-image: linear-gradient(to right,#6cc1e2,#392f7a);
+    color: white;
+    font-size:1.9rem;
+}
+/* RESPONSIVE */
+
+@media screen and (max-width: 600px) {
+    body{
+        font-size:1.3rem;
+    }
+    h1{
+        font-size:2.5rem;
+    }
+    h2{
+        font-size:2rem;
+    }
+    header nav {
+        height: 0;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        transition: height 0.5s ease-out;
+    }
+}
+
+@media screen and (min-width: 600px) {
+
+    header{
+        width:70%;
+        margin: 0 auto;
+    }
+    #menu {
+        display: none;
+    }
+
+    header nav ul {
+        margin-right: 2em;
+    }
+
+    header nav ul li {
+        display: inline-block;
+        margin: 0 0 0 1em;
+    }
+
+    header nav ul li a {
+        text-decoration: none;
+        color: grey;
+    }
+    #sez1 {
+        background-image: url("../images/banner_800.jpg");
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+    header{
+        width:99%;
+        
+    }
+    header label{
+        display:none;
+    }
+    header ul{
+        list-style: none;
+    }
+    
+
+    
+    header nav ul li{
+        display:inline-block;
+        margin-left: 1em;
+        
+    }
+    #sez1{
+        background-image: url("../images/banner_800.jpg");
+        
+    }
+    #sotto_sez_1{
+        width:40%;
+        margin: 0 auto;
+
+    }
+    #box1{
+        grid-area: box1;
+    }
+    #box2{
+        grid-area: box2;
+    }
+    #box3{
+        grid-area: box3;
+    }
+    #box4{
+        grid-area: box4;
+    }
+    section{
+        display:grid;
+        grid-template-areas: "box1 box1 box1"
+                             "box2 box3 box4" ;
+
+    }  
+    #azione img{
+        width:50%;
+        margin:10px;
+    }
+    #azione{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+
+    }                        
+    
+    #chi{
+        grid-area: chi;
+    }
+    #piace{
+        grid-area: piace;
+    }
+    #form{
+        grid-area: form;
+    }
+    #credit{
+        grid-area: cred;
+        width: 100%;
+        text-align: center;
+    }
+    footer{
+        display:grid;
+        grid-template-areas: "chi piace form"
+                              "cred cred cred";  
+
+    }
+/*Chi siamo*/
+#chisiamo {
+    margin-top: 50px;
+    display:flex;
+    justify-content: space-around;
+
+}   
+#chi2{
+       width:45%; 
+    }
+#chi3{
+    width:45%;
+}
+/*Contatti*/
+#titolo_contatti{
+    text-align: center;
+}
+#contatti_crediti{
+    width: 35%;
+    
+}
+#main_contatti  form{
+    
+    width:50%;
+}
+#main_contatti{
+    width:70%;
+    margin: 100px auto;
+    text-align: center;
+    display:flex;
+    /*flex-wrap: wrap;*/
+    align-items:center;
+    justify-content:center;
+}    
+}    
+
+@media only screen and (min-width: 1200px){
+    #sez1{
+        background-image: url("../images/banner_1024.jpg");
+    }
+    #azione img{
+        width:50%;
+
+    }
+}
